@@ -71,6 +71,11 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.vibrator-service.mediatek)
             "$PATCHELF" --replace-needed "android.hardware.vibrator-V2-ndk_platform.so" "android.hardware.vibrator-V2-ndk.so" "$2"
             ;;
+        vendor/bin/hw/android.hardware.security.keymint-service.trustonic)
+            "$PATCHELF" --replace-needed "android.hardware.security.keymint-V1-ndk_platform.so" "android.hardware.security.keymint-V1-ndk.so" "$2"
+            "$PATCHELF" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "$2"
+            "$PATCHELF" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "$2"
+            ;;
     esac
 }
 
