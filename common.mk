@@ -388,6 +388,7 @@ PRODUCT_PACKAGES += \
     libhidlbase_shim \
     libruy.vendor \
     libpcap.vendor \
+    libsqlite.vendor \
     libtextclassifier_hash.vendor \
     libutilscallstack.vendor \
     libziparchive.vendor \
