@@ -37,3 +37,6 @@ persist.vendor.nfc.            u:object_r:vendor_nfc_prop:s0
 
 # VT
 ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
+
+# Vibrator
+ro.vendor.tran.vibrator.option              u:object_r:vendor_mtk_default_prop:s
