@@ -5,5 +5,9 @@ type cwvi5300_device, dev_type;
 # FPSensor
 type fpsensor_fp_device, dev_type;
 
+# Silead
+type silead_fpd_device, dev_type;
+type silead_fpd_data_file, dev_type;
+
 # Tranfs
 type tranfs_block_device, dev_type;

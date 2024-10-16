@@ -54,7 +54,7 @@ genfscon sysfs /devices/platform/soc/1f000000.mdp/wakeup u:object_r:sysfs_wakeup
 genfscon sysfs /devices/platform/trusty/wakeup u:object_r:sysfs_wakeup:s0
 
 # Label Baterry info
-genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-chrdet/power_supply/mtk_charger_type u:object_r:sysfs_batteryinfo:s0;
+genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-chrdet/power_supply/mtk_charger_type u:object_r:sysfs_batteryinfo:s0
 
 # Torch
 genfscon sysfs /devices/virtual/sub_torch/sub_torch/sub_torch_level                                 u:object_r:sysfs_sub_torch_file:s0
