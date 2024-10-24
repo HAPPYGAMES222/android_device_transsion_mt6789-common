@@ -112,7 +112,6 @@ persist.vendor.kernel.version=5
 persist.vendor.uxcompaction_enable=true
 persist.vendor.factory.GB2312=no
 ro.limit_cache.support=1
-ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.efuse_writer_enable=1
 ro.vendor.mml.mtk_mml_support=0
 ro.vendor.mtk_gwsd_capability=1
