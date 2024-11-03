@@ -59,7 +59,8 @@
 /dev/fw_log_wifi          0660   wifi     wifi
 
 # FMRadio
-/dev/fm                   0660   system     system
+# NFBD:modify  for dev/fm 0660->0666 by yuguo.zhang 20220406
+/dev/fm                   0666   media     media
 
 # NFC
 /dev/st21nfc              0660   nfc        radio
@@ -193,3 +194,9 @@
 
 #MTK In-House TEE
 /dev/ttyACM0              0660   radio      radio
+
+#BSP:modify ultrasound support ADYLHBSLA-4 by xinyu.zhao 20220629 start
+#elliptic sensor
+/dev/elliptic0            0644   system     system
+/dev/elliptic1            0644   system     system
+#BSP:modify ultrasound support ADYLHBSLA-4 by xinyu.zhao 20220629 end

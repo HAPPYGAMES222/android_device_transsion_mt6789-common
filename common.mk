@@ -210,7 +210,6 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.recovery.usb.rc \
     init.sensor_2_0.rc \
-    init.transsion.rc \
     ueventd.mt6789.rc
 
 # Keylayout

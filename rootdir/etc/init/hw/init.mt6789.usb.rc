@@ -710,6 +710,8 @@ on property:sys.usb.config=acm_gs0gs1
     setprop sys.usb.config ${sys.usb.state}
     setprop vendor.usb.acm_idx "1,2"
 
+on property:persist.vendor.radio.port_index=1,4 && property:sys.boot_completed=1
+    setprop sys.usb.config acm_gs0gs3
 on property:sys.usb.config=gs3,dual_acm
     setprop sys.usb.config acm_gs0gs3
 on property:sys.usb.config=mtp,gs3,dual_acm
