@@ -77,6 +77,7 @@ ro.vendor.build.dont_use_vabc=true
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
+persist.vendor.sys.mtkaal.function=0
 
 # GPS
 ro.vendor.gps.chrdev=gps_drv_stp
