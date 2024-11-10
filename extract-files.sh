@@ -101,11 +101,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
-        system_ext/bin/vtservice|\
         system_ext/lib64/libsource.so)
             grep -q libshim_ui.so "$2" || "${PATCHELF}" --add-needed libshim_ui.so "${2}"
             ;;
-        system_ext/bin/vtservice|\
         system_ext/lib64/libsink.so)
             grep -q libshim_sink.so "$2" || "${PATCHELF}" --add-needed libshim_sink.so "${2}"
             ;;
